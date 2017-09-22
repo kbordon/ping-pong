@@ -37,21 +37,27 @@ var pingPong = function(userNumberInput) {
 }
 
 //front-end logic
+
 $(document).ready(function() {
-  $("#pingPongForm").submit(function(event) {
+  $("#pingpong-form").submit(function(event) {
     event.preventDefault();
-    var userNumberInput = $("#userNumber").val();
+    var userNumberInput = $("#user-number").val();
 
     var results = pingPong(userNumberInput);
     if (!results) {
       $("#results-message").hide();
       $("#error-message").show();
     } else {
-      $(".list").empty();
+      $(".number-list,.ping-list,.pong-list").empty();
       results.forEach(function(result){
-        $(".list").append("<ul class='list-unstyled'><li>" + result + "</li></ul>");
+        if (result === "ping") {
+          $(".ping-list").append("<ul class='list-unstyled'><li>" + result + "</li></ul>");
+        } else if (result === "pong") {
+          $(".pong-list").append("<ul class='list-unstyled'><li>" + result + "</li></ul>");
+        } else {
+          $(".number-list").append("<ul class='list-unstyled'><li>" + result + "</li></ul>");
+        }
       });
-
       $("#error-message").hide();
       $("#results-message").show();
     }

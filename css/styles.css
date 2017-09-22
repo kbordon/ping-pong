@@ -1,4 +1,4 @@
-#results, #error-message, #submit-again{
+#results-message, #error-message, #submit-again, .results-box{
   display: none;
 }
 
@@ -6,4 +6,6 @@ body {
   background-image: url(../img/pingpong.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position:top;
+  background-attachment: fixed;
 }

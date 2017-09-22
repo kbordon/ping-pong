@@ -12,21 +12,42 @@
       <div class="well">
         <h1>Let's Play Ping-Pong!</h1>
       </div>
-      <form id= "pingPongForm">
+      <form id= "pingpong-form">
         <div class="form-group">
-          <label for="userNumber" class="control-label">Enter a number:</label>
-          <input id="userNumber" type="number" class="form-control" required>
+          <label for="user-number" class="control-label">Enter a number:</label>
+          <input id="user-number" type="number" class="form-control" required>
         </div>
         <button type="submit" class="btn btn-warning">Let's play!</button>
       </form>
 
-      <div id="results-message">
-        <h4>These are the results.</h4>
-        <span class="list"></span>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div id="error-message">
+              <h4>As interesting as it would be to play with intangible elements, let's try something a little less challenging. Please enter a postive integer.</h4>
+            </div>
+            <div id="results-message">
+              <h4>These are the results.</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="ping-list">
+              <ul>
+                <span class="ping-list"></span>
+              </ul>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="number-list">
+            <span class="number-list"></span>
+          </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <ul>
+              <span class="pong-list"></span>
+          </div>
+        </div>
       </div>
-      <div id="error-message">
-        <h4>As interesting as it would be to play with intangible elements, let's try something a little less challenging. Please enter a postive integer.</h4>
-      </div>
+    </div>
+         <!-- container results-box -->
 
 
 
