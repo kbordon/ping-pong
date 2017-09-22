@@ -45,25 +45,26 @@ $(document).ready(function() {
 
     var results = pingPong(userNumberInput);
     if (!results) {
+      $(".number-box,.ping-box,.pong-box,.ping-pong-box").hide();
       $(".number-list,.ping-list,.pong-list,.ping-pong-list").empty();
       $("#results-message").hide();
-      $("#error-message").show();
+      $("#error-message").fadeIn();
     } else {
       $(".number-box,.ping-box,.pong-box,.ping-pong-box").hide();
       $(".number-list,.ping-list,.pong-list,.ping-pong-list").empty();
       results.forEach(function(result){
         if (result === "ping") {
           $(".ping-list").append("<ul class='list-unstyled'><li><em>" + result + "</em></li></ul>");
-          $(".ping-box").show();
+          $(".ping-box").fadeIn(400);
         } else if (result === "pong") {
           $(".pong-list").append("<ul class='list-unstyled'><li><strong>" + result + "</strong></li></ul>");
-          $(".pong-box").show();
+          $(".pong-box").fadeIn(600);
         } else if (result === "ping-pong") {
           $(".ping-pong-list").append("<ul class='list-unstyled'><li><em><strong>" + result + "</strong></em></li></ul>");
-          $(".ping-pong-box").show();
+          $(".ping-pong-box").fadeIn(800);
         } else {
           $(".number-list").append("<ul class='list-unstyled'><li>" + result + "</li></ul>");
-          $(".number-box").show();
+          $(".number-box").fadeIn(200);
         }
       });
       $("#error-message").hide();
