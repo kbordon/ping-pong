@@ -29,7 +29,12 @@ var pingPong = function(userNumberInput) {
     return false
   } else {
     var numbersArray = countUpToNumber(userInteger);
-    return replaceNumbers(numbersArray);
+    var regularAndReverseArray = [];
+    var replacedArray = replaceNumbers(numbersArray);
+    var reversedArray = replacedArray.slice().reverse(); regularAndReverseArray.push(replacedArray,reversedArray);
+    console.log(regularAndReverseArray);
+    return regularAndReverseArray;
+
   }
 
 
@@ -44,7 +49,7 @@ $(document).ready(function() {
     var userNumberInput = $("#user-number").val();
 
     var results = pingPong(userNumberInput);
-    if (!results) {
+    if (!results[1]) {
       $(".number-box,.ping-box,.pong-box,.ping-pong-box").hide();
       $(".number-list,.ping-list,.pong-list,.ping-pong-list").empty();
       $("#results-message").hide();
@@ -52,14 +57,14 @@ $(document).ready(function() {
     } else {
       $(".number-box,.ping-box,.pong-box,.ping-pong-box").hide();
       $(".number-list,.ping-list,.pong-list,.ping-pong-list").empty();
-      results.forEach(function(result){
-        if (result === "ping") {
+      results[1].forEach(function(result[1]){
+        if (result[1] === "ping") {
           $(".ping-list").append("<ul class='list-unstyled'><li><em>" + result + "</em></li></ul>");
           $(".ping-box").fadeIn(400);
-        } else if (result === "pong") {
+        } else if (result[1] === "pong") {
           $(".pong-list").append("<ul class='list-unstyled'><li><strong>" + result + "</strong></li></ul>");
           $(".pong-box").fadeIn(600);
-        } else if (result === "ping-pong") {
+        } else if (result[1] === "ping-pong") {
           $(".ping-pong-list").append("<ul class='list-unstyled'><li><em><strong>" + result + "</strong></em></li></ul>");
           $(".ping-pong-box").fadeIn(800);
         } else {
