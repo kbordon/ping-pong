@@ -10,7 +10,7 @@ _This is a form that uses CSS to display lists of numbers, and the words "ping,"
 
 ## GH-pages link
 
-Click [here]() or copy this url:
+Click [here](https://kbordon.github.io/ping-pong/) or copy this url: https://kbordon.github.io/ping-pong/
 
 ## Specifications:
 
