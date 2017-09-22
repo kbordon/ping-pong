@@ -47,4 +47,3 @@ Copyright (c) 2016 **_{List of contributors or company name}_**
 |It will replace numbers divisible by 15 with "ping-pong" | 15 | 1, ..., 14, ping-pong
 | If a user enters a new number, the previous results will be replaced by new results. | 1 is replaced by 2 | 1 is replaced by 1,2 |
 |If will display the provided numbers in a list | 3 | 1,2,3|
-|If user enters a number starting with zero, it will remove the zero and move the next number to the front. | 04 | 4 |
