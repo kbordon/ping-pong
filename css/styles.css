@@ -1,7 +1,12 @@
-#results-message, #error-message, .results-box{
+#results-message, #error-message, .number-box, .ping-pong-box, .pong-box, .ping-box {
   display: none;
 }
 
+#results-message, {
+  color: #fff9e6;
+  font-size: 20pt;
+  font-weight: bolder;
+}
 h1 {
   color: white;
   font-size: 50pt;
@@ -10,11 +15,6 @@ h1 {
   letter-spacing: 20px;
 }
 
-#results-message, {
-  color: white;
-  font-size: 20pt;
-  font-weight: bolder;
-}
 
 body {
   color: #fff9e6;
@@ -28,4 +28,14 @@ body {
 
 .well {
   color: black;
+  opacity: .85;
+  font-size: 20pt;
+  text-align: center;
+}
+
+.message-box {
+  margin-top: 20px;
+}
+.column-box {
+  width: 80%;
 }

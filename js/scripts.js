@@ -49,16 +49,21 @@ $(document).ready(function() {
       $("#results-message").hide();
       $("#error-message").show();
     } else {
+      $(".number-box,.ping-box,.pong-box,.ping-pong-box").hide();
       $(".number-list,.ping-list,.pong-list,.ping-pong-list").empty();
       results.forEach(function(result){
         if (result === "ping") {
-          $(".ping-list").append("<ul class='list-unstyled'><li>" + result + "</li></ul>");
+          $(".ping-list").append("<ul class='list-unstyled'><li><em>" + result + "</em></li></ul>");
+          $(".ping-box").show();
         } else if (result === "pong") {
-          $(".pong-list").append("<ul class='list-unstyled'><li>" + result + "</li></ul>");
+          $(".pong-list").append("<ul class='list-unstyled'><li><strong>" + result + "</strong></li></ul>");
+          $(".pong-box").show();
         } else if (result === "ping-pong") {
-          $(".ping-pong-list").append("<ul class='list-unstyled'><li>" + result + "</li></ul>");
+          $(".ping-pong-list").append("<ul class='list-unstyled'><li><em><strong>" + result + "</strong></em></li></ul>");
+          $(".ping-pong-box").show();
         } else {
           $(".number-list").append("<ul class='list-unstyled'><li>" + result + "</li></ul>");
+          $(".number-box").show();
         }
       });
       $("#error-message").hide();
