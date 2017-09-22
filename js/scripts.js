@@ -1,20 +1,31 @@
 var countUpToNumber = function(userInteger) {
   debugger;
-  for (var countStartNumber = 1; countStartNumber <= userInteger; countStartNumber++ ) {
-    countUpNumbers.push(countStartNumber);
+  var numbersArray = [];
+  for (var currentNumber = 1; currentNumber <= userInteger; currentNumber++) {
+    numbersArray.push(currentNumber);
   }
-  console.log(countUpNumbers);
+  return numbersArray;
+}
+
+var replaceNumbers = function(numbersArray) {
+  var replacedNumbers = numbersArray.map(function(number){
+    if (number % 3 === 0) {
+      return "ping";
+    } else {
+      return number
+    }
+  });
+  return replacedNumbers;
 }
 
 
 var pingPong = function(userNumberInput) {
   var userInteger = parseInt(userNumberInput);
-  var countUpNumbers = [];
   if (userInteger <= 0) {
     return false
   } else {
-    countUpToNumber();
-    return userNumberInput;
+    var numbersArray = countUpToNumber(userInteger);
+    return replaceNumbers(numbersArray);
   }
 
 
