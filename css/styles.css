@@ -15,7 +15,9 @@ h1 {
   letter-spacing: 20px;
   margin-bottom: 30px;
 }
-
+html {
+  height: 100%;
+}
 body {
   color: #fff9e6;
   font-family: sans-serif;
@@ -24,6 +26,12 @@ body {
   background-repeat: no-repeat;
   background-position:top;
   background-attachment: fixed;
+  min-height: 100%;
+  position: relative;
+}
+
+.results-box {
+  margin-bottom: 100px;
 }
 
 .well {
@@ -38,4 +46,17 @@ body {
 }
 .column-box {
   width: 75%;
+}
+
+.bottom-info {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  font-size: 12px;
+  background-color: #000066;
+  opacity: .80;
+}
+.bottom-info p {
+  padding: 10px;
 }

@@ -8,54 +8,60 @@
     <title>Ping-Pong!</title>
   </head>
   <body>
-    <div class="">
-        <h1><em>PING</em> </strong>PONG</strong></h1>
-      <form id= "pingpong-form">
-        <div class="form-group">
-          <label for="user-number">Enter a number:</label>
-          <input id="user-number" type="number" class="form-control" placeholder="A number that is greater than 0" required>
-        </div>
-        <button type="submit" class="btn btn-warning">Let's play!</button>
-      </form>
-    </div>
+    <div>
+      <div class="container">
+          <h1><em>PING</em>-</strong>PONG</strong></h1>
+        <form id= "pingpong-form">
+          <div class="form-group">
+            <label for="user-number">Enter a number:</label>
+            <input id="user-number" type="number" class="form-control" placeholder="A number that is greater than 0" required>
+          </div>
+          <button type="submit" class="btn btn-warning">Let's play!</button>
+        </form>
+      </div>
 
-    <div class="container results-box">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 message-box">
-          <div id="error-message">
-            <div class="well">
-              <h4>As interesting as it would be to play with intangible elements, let's try something a little less challenging. Please enter a postive integer.</h4>
+      <div class="container results-box">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 message-box">
+            <div id="error-message">
+              <div class="well">
+                <h4>As interesting as it would be to play with intangible elements, let's try something a little less challenging. Please enter a postive integer.</h4>
+              </div>
+            </div>
+            <div id="results-message">
+                <h2>Match Results:</h2>
             </div>
           </div>
-          <div id="results-message">
-              <h2>Match Results:</h2>
+        </div>
+        <div class="row">
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 number-box">
+            <div class="well column-box">
+              <span class="number-list"></span>
+            </div>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ping-box">
+            <div class="well column-box">
+                <span class="ping-list"></span>
+            </div>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 pong-box">
+            <div class="well column-box">
+              <span class="pong-list"></span>
+            </div>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ping-pong-box">
+            <div class="well column-box">
+              <span class="ping-pong-list"></span>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 number-box">
-          <div class="well column-box">
-            <span class="number-list"></span>
-          </div>
-        </div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ping-box">
-          <div class="well column-box">
-              <span class="ping-list"></span>
-          </div>
-        </div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 pong-box">
-          <div class="well column-box">
-            <span class="pong-list"></span>
-          </div>
-        </div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ping-pong-box">
-          <div class="well column-box">
-            <span class="ping-pong-list"></span>
-          </div>
-        </div>
+           <!-- container results-box -->
+      <div class="container bottom-info">
+        <h4>Created by Kimberly Bordon for Epicodus</h4>
+        <p>This is page that takes a number, and creates a list from the range of 1 and that number. From that it, it replaces the numbers divisible by 3, 5, and 15 with the words "ping," "pong," and "ping-pong," respectively.</p>
       </div>
     </div>
-         <!-- container results-box -->
 
 
 
