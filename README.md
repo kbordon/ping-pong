@@ -41,7 +41,7 @@ Click [here](https://kbordon.github.io/ping-pong/) or copy this url: https://kbo
 
 ## Support and contact details
 
-_If there any questions or concerns, please contact Kimberly at [kbordon](mailto:kbordon@gmail.com)._
+_If there any questions or concerns, please contact Kimberly at [kbordon@gmail.com](mailto:kbordon@gmail.com)._
 
 ## Technologies Used
 
