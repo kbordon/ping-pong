@@ -15,13 +15,17 @@
       <form id= "pingPongForm">
         <div class="form-group">
           <label for="userNumber" class="control-label">Enter a number:</label>
-          <input type="number" class="form-control" required>
+          <input id="userNumber" type="number" class="form-control" required>
         </div>
         <button type="submit" class="btn btn-warning">Let's play!</button>
       </form>
 
       <div id="results">
-          <h4>These are the results.</h4>
+        <h4>These are the results.</h4>
+        <span class="list"></span>
+      </div>
+      <div id="error-message">
+        <h4>As interesting as it would be to play with intangible elements, let's try something a little less challenging. Please enter a postive integer.</h4>
       </div>
 
 
