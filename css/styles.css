@@ -13,8 +13,8 @@ h1 {
   text-align: center;
   text-shadow: #C90 1px 0 10px;
   letter-spacing: 20px;
+  margin-bottom: 30px;
 }
-
 
 body {
   color: #fff9e6;
@@ -28,7 +28,7 @@ body {
 
 .well {
   color: black;
-  opacity: .85;
+  opacity: .70;
   font-size: 20pt;
   text-align: center;
 }
@@ -37,5 +37,5 @@ body {
   margin-top: 20px;
 }
 .column-box {
-  width: 80%;
+  width: 75%;
 }
