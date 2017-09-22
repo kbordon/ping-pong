@@ -1,3 +1,4 @@
+// back-end logic
 var countUpToNumber = function(userInteger) {
   debugger;
   var numbersArray = [];
@@ -22,7 +23,6 @@ var replaceNumbers = function(numbersArray) {
   return replacedNumbers;
 }
 
-
 var pingPong = function(userNumberInput) {
   var userInteger = parseInt(userNumberInput);
   if (userInteger <= 0) {
@@ -42,14 +42,18 @@ $(document).ready(function() {
     event.preventDefault();
     var userNumberInput = $("#userNumber").val();
 
-    var result = pingPong(userNumberInput);
-    if (!result) {
-      $("#results").hide();
+    var results = pingPong(userNumberInput);
+    if (!results) {
+      $("#results-message").hide();
       $("#error-message").show();
     } else {
+      $(".list").empty();
+      results.forEach(function(result){
+        $(".list").append("<ul class='list-unstyled'><li>" + result + "</li></ul>");
+      });
+
       $("#error-message").hide();
-      $(".list").text(result);
-      $("#results").show();
+      $("#results-message").show();
     }
 
   })

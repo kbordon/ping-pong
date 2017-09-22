@@ -1,3 +1,9 @@
-#results, #error-message {
+#results, #error-message, #submit-again{
   display: none;
+}
+
+body {
+  background-image: url(../img/pingpong.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
