@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is a form that uses CSS to display lists of numbers, and the words "ping," "pong," and "ping-pong." With Javascript, it takes a number input, validates it, and creates an array based off a number and loops through that array to create the lists. If it recieves an invalid number, it displays an error message._
+_This is a form that uses CSS to display lists of numbers, "ping," "pong," and "ping-pong." With Javascript, it takes a number input, validates it, and creates an array based off a number, and loops through that array to create the lists. If it receives an invalid number, it displays an error message._
 
 ## GH-pages link
 
@@ -45,9 +45,9 @@ _If there any questions or concerns, please contact Kimberly at [kbordon](mailto
 
 ## Technologies Used
 
-*Bootstrap
-*jQuery
-*Javascript
+* Bootstrap
+* jQuery
+* Javascript
 
 ### License
 
