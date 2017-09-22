@@ -36,7 +36,8 @@ Click [here]() or copy this url:
 
 ## Known Bugs
 
-_* The page's footer text can occasionally dip below the viewerport boundaries, depending on browser dimensions._
+* The page's footer text can occasionally dip below the viewerport boundaries, depending on browser dimensions.
+* Not a bug, but would prefer to make footer positioned absolutely to the bottom, rather than fixed at bottom of viewerport.
 
 ## Support and contact details
 
