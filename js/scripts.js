@@ -45,15 +45,18 @@ $(document).ready(function() {
 
     var results = pingPong(userNumberInput);
     if (!results) {
+      $(".number-list,.ping-list,.pong-list,.ping-pong-list").empty();
       $("#results-message").hide();
       $("#error-message").show();
     } else {
-      $(".number-list,.ping-list,.pong-list").empty();
+      $(".number-list,.ping-list,.pong-list,.ping-pong-list").empty();
       results.forEach(function(result){
         if (result === "ping") {
           $(".ping-list").append("<ul class='list-unstyled'><li>" + result + "</li></ul>");
         } else if (result === "pong") {
           $(".pong-list").append("<ul class='list-unstyled'><li>" + result + "</li></ul>");
+        } else if (result === "ping-pong") {
+          $(".ping-pong-list").append("<ul class='list-unstyled'><li>" + result + "</li></ul>");
         } else {
           $(".number-list").append("<ul class='list-unstyled'><li>" + result + "</li></ul>");
         }

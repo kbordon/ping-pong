@@ -1,11 +1,31 @@
-#results-message, #error-message, #submit-again, .results-box{
+#results-message, #error-message, .results-box{
   display: none;
 }
 
+h1 {
+  color: white;
+  font-size: 50pt;
+  text-align: center;
+  text-shadow: #C90 1px 0 10px;
+  letter-spacing: 20px;
+}
+
+#results-message, {
+  color: white;
+  font-size: 20pt;
+  font-weight: bolder;
+}
+
 body {
+  color: #fff9e6;
+  font-family: sans-serif;
   background-image: url(../img/pingpong.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position:top;
   background-attachment: fixed;
+}
+
+.well {
+  color: black;
 }
